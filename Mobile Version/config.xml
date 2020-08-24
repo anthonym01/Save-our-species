@@ -1,0 +1,26 @@
+<?xml version='1.0.0' encoding='utf-8'?>
+<widget id="com.ANTHONYM.SOS" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Save Our Species</name>
+    <description>
+        description Is Discription
+    </description>
+    <author email="samuelmatheson15@gmail.com" href="mailto:samuelmatheson15@gmail.com">
+        Samuel A. Matheson
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:18765744891" />
+    <allow-intent href="sms:18765744801" />
+    <allow-intent href="mailto:samuelmatheson15@gmail.com" />
+    <allow-intent href="geo:*" />
+    <icon src="res/icon/icon.png" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="res/icon/icon.png" />
+        <splash src="res/splashscreen/base_landscape.png" density="land"/>
+        <splash src="res/splashscreen/base_partrait.png" density="port"/>
+        <preference name="ShowSplashScreenSpinner" value="false"/>
+    </platform>
+</widget>

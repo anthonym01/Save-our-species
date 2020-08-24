@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-x-toast","cordova-plugin-device","cordova-plugin-splashscreen","cordova-plugin-battery-status","cordova-plugin-file","cordova-plugin-screen-orientation","es6-promise-plugin","cordova-plugin-statusbar"]}

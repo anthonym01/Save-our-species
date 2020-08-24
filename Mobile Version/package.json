@@ -1,0 +1,41 @@
+{
+  "name": "save-our-species",
+  "displayName": "Save Our Species",
+  "version": "1.0.0",
+  "description": "My first game",
+  "main": "index.js",
+  "scripts": {
+    "build-android": "cordova build android"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-statusbar": {}
+    }
+  },
+  "dependencies": {
+    "cordova": "^9.0.0",
+    "cordova-android": "^8.1.0",
+    "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-screen-orientation": "^3.0.2",
+    "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-x-toast": "^2.7.2",
+    "es6-promise-plugin": "^4.2.2"
+  }
+}
