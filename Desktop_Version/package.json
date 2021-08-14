@@ -1,0 +1,68 @@
+{
+  "name": "blank_electron_template",
+  "version": "0.0.1",
+  "description": "Blank electron template",
+  "main": "main.js",
+  "author": {
+    "name": "Anthonym",
+    "email": "samuelmatheson20@gmail.com"
+  },
+  "homepage": "https://null.none",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "icon": "build/icon.png",
+  "license": "ISC",
+  "bin": "BB01",
+  "scripts": {
+    "start": "electron main.js",
+    "postinstall": "electron-builder install-app-deps",
+    "builder-linux": "npm version patch && electron-builder --linux deb appimage tar.xz snap",
+    "builder-mac": "npm version patch && electron-builder --darwin",
+    "builder-win": "npm version patch && electron-builder --win --x64 --ia32"
+  },
+  "build": {
+    "appId": "com.blank.electron",
+    "icon": "build/icon.png",
+    "productName": "blank electron template",
+    "copyright": "Copyright © 2020 ${author}",
+    "buildVersion": "0.0.1",
+    "remoteBuild": "true",
+    "asar": "true",
+    "mac": {
+      "category": "utility",
+      "icon": "build/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "utility",
+      "icon": "build/icon.png"
+    },
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "Windows/**/*",
+      "node_modules/**/*",
+      "build/**/*",
+      "package.json",
+      "main.js",
+      "worker.js"
+    ]
+  },
+  "devDependencies": {
+    "asar": "^1.0.0",
+    "electron": "^13.1.2",
+    "electron-builder": "^22.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "electron-store": "^6.0.0",
+    "electron-window-state": "^5.0.3"
+  }
+}
